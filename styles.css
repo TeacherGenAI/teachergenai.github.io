@@ -171,17 +171,53 @@ main {
     gap: 2rem;
 }
 
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid var(--primary-color);
+}
+
 .team-member {
+    padding: 25px;
     text-align: center;
-    padding: 1.5rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
     background-color: var(--card-background);
     border-radius: 1rem;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .team-member a {
-    color: var(--primary-color);
+    display: block;
+    margin: 5px 0;
+    word-break: break-all;
+    color: #666;
     text-decoration: none;
+    padding: 5px;
+}
+
+.team-member a.website-link {
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+.team-member a:hover {
+    text-decoration: underline;
+}
+
+.team-member i {
+    margin-right: 5px;
+}
+
+.team-member p {
+    margin: 5px 0;
 }
 
 footer {
